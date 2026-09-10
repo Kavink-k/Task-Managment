@@ -1,0 +1,28 @@
+{
+  "name": "task-management-system",
+  "version": "1.0.0",
+  "description": "Production-grade Task Management System built with MERN stack for Xplore Intellects assessment",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "npm run server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\"",
+    "seed": "npm run seed --prefix server",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": [
+    "mern",
+    "task-management",
+    "express",
+    "mongodb",
+    "react",
+    "jwt",
+    "nodemailer"
+  ],
+  "author": "Antigravity Engineer",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
